@@ -3,3 +3,95 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+ /*-----MON HEADER-----*/
+ header{
+  background-color: #FF0A0A ;
+  
+
+  h1{
+    margin: 0;
+  }
+}
+
+/*-----MON MAIN-----*/
+main {
+  margin : 5rem;
+}
+
+
+/*-----MON FORMULAIRE DE CONTACT-----*/
+
+form {
+  /* On centre le formulaire */
+  margin: 0 auto;
+  width: 400px;
+  /* Le contour du formulaire */
+  padding: 1.5em;
+  border: 2px solid #ccc;
+  border-radius: 1em;
+}
+
+h2{
+  margin-top: 0;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1.5em;
+}
+
+label {
+  /* Taille et alignement uniformes */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input,
+textarea {
+  /* On s'assure que les champs texte ont la même police */
+  font: 1em sans-serif;
+
+  /* Taille uniforme pour des champs */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* On utilise la même bordure que pour le formulaire */
+  border: 1px solid #999;
+}
+
+
+textarea {
+  /* On aligne les textes sur plusieurs lignes avec leur
+     libellé. */
+  vertical-align: top;
+
+  /* On fournit un peut d'espace pour saisir du texte. */
+  height: 6em;
+
+  /* On permet de redimensionner verticalement. */
+  resize: vertical;
+}
+
+.button {
+  /* On aligne les boutons avec les champs texte. */
+  text-align: center;
+  padding-top: 1rem;
+}
+
+
+
+
+/*-----MON FOOTER-----*/
+
+footer{
+  background-color: #FF0A0A;
+}

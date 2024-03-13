@@ -17,7 +17,36 @@
     </header>
 
     <main>
-      <!-- Nicolas -->
+      <form action="/ma-page-de-traitement" method="post">
+        <ul>
+            <h2> Prendre contact avec l'équipe LegoMuscu</h2>
+          <li>
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="user_name" />
+          </li>
+          <li>
+            <label for="mail">E-mail :</label>
+            <input type="email" id="mail" name="user_mail" />
+          </li>
+          <li>
+            <label for="subject">Sujet : </label>
+            <select name="subject" required>
+                <option value="">Fais ton choix</option>
+                <option value="Prise de masse"> Prise de masse</option>
+                <option value="Prendre l'air avec des randonnées"> Prendre l'air avec des randonnées</option>
+                <option value="Le summer body en bronzant"> Le summer body en bronzant</option>
+                <option value="J'ai plus d'inspration">J'ai plus d'inspiration</option>
+            </select>
+          </li>
+          <li>
+            <label for="msg">Message :</label>
+            <textarea id="msg" name="user_message"></textarea>
+          </li>
+        </ul>
+        <div class="button">
+          <button type="submit">Envoyer le message</button>
+        </div>
+      </form>
     </main>
 
     <footer>
