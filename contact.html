@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
     <title>Lego Muscu</title>
   </head>
 
@@ -18,36 +22,44 @@
 
     <main>
       <form action="/ma-page-de-traitement" method="post">
+        <h2> Prendre contact avec l'équipe Lego Muscu</h2>
         <ul>
-            <h2> Prendre contact avec l'équipe LegoMuscu</h2>
           <li>
             <label for="name">Nom :</label>
             <input type="text" id="name" name="user_name" />
           </li>
           <li>
             <label for="mail">E-mail :</label>
-            <input type="email" id="mail" name="user_mail" />
+            <input type="email" required id="mail" name="user_mail" />
           </li>
           <li>
             <label for="subject">Sujet : </label>
-            <select name="subject" required>
+            <select id="subject" required>
                 <option value="">Fais ton choix</option>
-                <option value="Prise de masse"> Prise de masse</option>
-                <option value="Prendre l'air avec des randonnées"> Prendre l'air avec des randonnées</option>
-                <option value="Le summer body en bronzant"> Le summer body en bronzant</option>
-                <option value="J'ai plus d'inspration">J'ai plus d'inspiration</option>
+                <option value="Coach Sébastien"> Coach Sébastien - Prise de masse</option>
+                <option value="Coach Angélina"> Coach Angélina - Prendre le grand air</option>
+                <option value="Coach Maëva"> Coach Maëva - Le summer body en bronzant</option>
+                <option value="Coach Nicolas"> Coach Nicolas - Trouver l'équilibre entre sport et nutrition</option>
+                <option value="Autre"> Autres renseignements</option>
             </select>
           </li>
           <li>
             <label for="msg">Message :</label>
             <textarea id="msg" name="user_message"></textarea>
           </li>
+          <li class="Newsletter">
+            <input type = "checkbox" value = "Newsletter" />
+            <label> S'incrire à la newsletter de Lego Muscu.</label>
+          </li>
         </ul>
+        
         <div class="button">
           <button type="submit">Envoyer le message</button>
         </div>
       </form>
     </main>
+
+
 
     <footer>
       <p>©Lego Muscu</p>
