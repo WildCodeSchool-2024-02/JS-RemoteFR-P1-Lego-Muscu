@@ -92,7 +92,6 @@ nav {
 /*-----MON FORMULAIRE DE CONTACT-----*/
 
 body{
-  background-color: #f5f4f4*;
   background-image: url("./assets/altere.jpg");
 }
 
@@ -109,6 +108,10 @@ form {
   padding: 1.5em;
   border: 2px solid var(--main-color);
   border-radius: 1em;
+
+  @media screen and (min-width: 768px){
+    width: 600px;
+  }
   
   h2{
     margin-top: 0;
@@ -127,10 +130,21 @@ form {
     /* Taille et alignement uniformes */
     display: inline-block;
     width: 350px;
+    @media screen and (min-width: 768px){
+      width: 550px;
+    }
   }
 
+  input{
+    padding: .2rem;
+  }
+  
   select{
     width: 350px;
+    padding: .2rem;
+    @media screen and (min-width: 768px){
+      width: 550px;
+    }
   }
 
   input,
@@ -141,6 +155,10 @@ form {
     /* Taille uniforme pour des champs */
     width: 350px;
     box-sizing: border-box;
+
+    @media screen and (min-width: 768px){
+      width: 550px;
+    }
   
     /* On utilise la même bordure que pour le formulaire */
     border: 1px solid #999;
@@ -164,12 +182,18 @@ form {
     input{
         width: 20%;
         justify-content: left;
-      }
+       }
+
       label{
         width: 300px;
          text-align: left;
          font-size: .8em;
-      }
+
+        }
+        @media screen and (min-width: 768px){
+          display: block;
+          text-align: center;
+       }
   }
 
   .button {
@@ -180,6 +204,9 @@ form {
     button{
       padding: .2rem;
     }
+  }
+  button:hover{
+    background-color: var(--main-color);
   }
 }
 
