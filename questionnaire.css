@@ -1,0 +1,60 @@
+:root{
+    --main-color : #FF0A0A;
+  }
+
+ * {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+
+ } 
+
+h1 {
+    text-align: center;
+
+}
+ p{
+    text-align: center;
+}
+
+ul  {
+    list-style-type: none;
+}
+
+form {
+  /* On centre le formulaire */
+  margin: auto auto 10px auto ;
+  width: 400px;
+  background-color: #D9D9D9;
+  /* Le contour du formulaire */
+  padding: 1.5em;
+  border: 2px solid var(--main-color);
+  border-radius: 1em;
+  
+}
+
+.bouton {
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+    
+}
+
+.submit {
+border: #FF0A0A 1px solid;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #ff0a0a;
+  width: 100%;
+  position: absolute;
+
+  img {
+    width: 70px;
+  }
+}
+
+.copyright {
+  font-size: 1em;
+}
