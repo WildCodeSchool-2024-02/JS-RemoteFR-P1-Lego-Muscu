@@ -83,24 +83,98 @@ nav {
   padding: 10px;
   width: 100%;
   font-size: calc(0.5rem + 1vw);
+
+  img {
+    width: 50px;
+  }
 }
 
 /* MAIN */
 
-main {
+#welcome {
+  height: 250px;
+  width: 100%;
+  background-image: url("./assets/altere.jpg");
+  background-size: cover;
+}
+
+h1 {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  top: 35%;
+}
+
+p {
+  text-align: justify;
+  padding: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   width: 100%;
 }
 
-.coach4 {
+.photo-angelina {
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  padding: 1rem;
+}
+
+.coach1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.photo-sebastien {
+  height: 200px;
+  width: 200px;
+  padding: 1rem;
+}
+
+.coach2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.photo-maeva {
+  height: 200px;
+  width: 200px;
+  padding: 1rem;
+}
+
+.coach3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
 }
 
 .photo-nico {
   height: 200px;
   width: 200px;
+  padding: 1rem;
+}
+.coach4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
 }
 
 /* FOOTER */
@@ -112,7 +186,10 @@ footer {
   background-color: #ff0a0a;
   width: 100%;
   position: absolute;
-  bottom: 0;
+
+  img {
+    width: 70px;
+  }
 }
 
 .copyright {
