@@ -11,6 +11,65 @@
 }
 
 /* HEADER */
+#icons {
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #icons {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+  }
+  #icons:before {
+    content: "\2630";
+  }
+  .active #icons:before {
+    content: "\2715";
+  }
+  nav ul {
+    position: fixed;
+    left: -100%;
+    top: 4.3rem;
+    flex-direction: column;
+    background: #ff0a0a;
+    width: 100%;
+    text-align: center;
+    transition: 0.25s;
+  }
+  nav li {
+    padding: 3px 0;
+  }
+  nav li:hover {
+    background: #f53030;
+  }
+  nav.active ul {
+    left: 0;
+  }
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:hover {
+  color: #0a0903;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color: white;
+}
 
 header {
   display: flex;
@@ -23,14 +82,7 @@ nav {
   background: #ff0a0a;
   padding: 10px;
   width: 100%;
-  height: 70px;
-}
-
-.logo1 {
-  display: flex;
-  justify-content: center;
-  background-color: var(--primary-background-color);
-  align-items: center;
+  font-size: calc(0.5rem + 1vw);
 }
 
 /* MAIN */
@@ -40,79 +92,28 @@ main {
   width: 100%;
 }
 
-.photo-angelina {
-  justify-content: center;
-  height: 200px;
-  width: 200px;
-}
-
-.coach1 {
+.coach4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-}
-
-.photo-sebastien {
-  height: 200px;
-  width: 200px;
-}
-
-.coach2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 1rem;
-}
-
-.photo-maeva {
-  height: 200px;
-  width: 200px;
-}
-
-.coach3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 1rem;
 }
 
 .photo-nico {
   height: 200px;
   width: 200px;
 }
-.coach4 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 1rem;
-}
+
+/* FOOTER */
 
 footer {
   display: flex;
   justify-content: space-evenly;
-  align-content: center;
+  align-items: center;
   background-color: #ff0a0a;
   width: 100%;
   margin-top: 187px;
 }
 
 .copyright {
-  display: flex;
-  align-items: center;
-}
-
-.logo-insta {
-  width: 50px;
-  height: 50px;
-}
-
-.logo-fb {
-  width: 50px;
-  height: 50px;
+  font-size: 1em;
 }
