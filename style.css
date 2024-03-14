@@ -20,7 +20,7 @@
   #icons {
     display: flex;
     align-items: center;
-    font-size: 2em;
+    font-size: 3em;
   }
   #icons:before {
     content: "\2630";
@@ -31,7 +31,7 @@
   nav ul {
     position: fixed;
     left: -100%;
-    top: 4.3rem;
+    top: 5.3rem;
     flex-direction: column;
     background: #ff0a0a;
     width: 100%;
@@ -51,7 +51,7 @@
 
 nav ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 100%;
   align-items: center;
 }
@@ -82,10 +82,10 @@ nav {
   background: #ff0a0a;
   padding: 10px;
   width: 100%;
-  font-size: calc(0.5rem + 1vw);
+  font-size: calc(0.4rem + 0.7vw);
 
   img {
-    width: 50px;
+    width: 65px;
   }
 }
 
@@ -110,6 +110,13 @@ h1 {
 p {
   text-align: justify;
   padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  p {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
 }
 
 .container {
@@ -188,10 +195,18 @@ footer {
   position: absolute;
 
   img {
-    width: 70px;
+    width: 73px;
   }
 }
 
 .copyright {
   font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .copyright {
+    font-size: 1.3em;
+  }
 }
