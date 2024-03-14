@@ -119,12 +119,13 @@ li {
   width: 400px;
 }
 
-label{
+label.question{
 display: inline-block;
   text-align: center;
   width: 400px;
   font-weight:bold ;
   margin-top: 10px;
+  margin-bottom:20px ;
 }
 
 form {
