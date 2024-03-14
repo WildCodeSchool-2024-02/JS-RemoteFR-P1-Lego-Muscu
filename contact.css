@@ -83,10 +83,10 @@ nav {
   width: 100%;
   font-size: calc(0.4rem + 0.7vw);
   font-weight: 500;
+}
 
-  img {
-    width: 65px;
-  }
+nav img {
+  width: 65px;
 }
 
 /*-----MON FORMULAIRE DE CONTACT-----*/
@@ -226,10 +226,10 @@ footer {
   width: 100%;
   position: absolute;
   bottom: 0;
+}
 
-  img {
-    width: 73px;
-  }
+footer img {
+  width: 73px;
 }
 
 .copyright {
