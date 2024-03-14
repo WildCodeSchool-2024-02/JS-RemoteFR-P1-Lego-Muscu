@@ -1,5 +1,13 @@
-/*document.querySelectorAll("input:checked")
-for (let radio of document.querySelectorAll("input:checked")) {
-    valider.addEventListener("click")
-  console.log(radio);
-}*/
+/* Menu Burger */
+const links = document.querySelectorAll("nav li");
+
+icons.addEventListener("click", () => {
+  nav.classList.toggle("active");
+});
+
+links.forEach((link) => {
+  link.addEventListener("click", () => {
+    nav.classList.remove("active");
+  });
+});
+
