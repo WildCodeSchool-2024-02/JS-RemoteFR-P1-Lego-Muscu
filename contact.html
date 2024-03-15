@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Lego Muscu</title>
+  </head>
+
+  <body>
+    <header>
+      <nav id="nav">
+        <img src="assets/logo-lego-muscu.png" alt="logo" />
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="questionnaire.html">QUESTIONNAIRE</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <div id="icons"></div>
+      </nav>
+    </header>
+
+    <main>
+      <form action="/ma-page-de-traitement" method="post">
+        <h2>Prendre contact avec l'équipe Lego Muscu</h2>
+        <ul>
+          <li>
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="user_name" />
+          </li>
+          <li>
+            <label for="mail">E-mail :</label>
+            <input type="email" required id="mail" name="user_mail" />
+          </li>
+          <li>
+            <label for="subject">Sujet : </label>
+            <select id="subject" required>
+              <option value="">Fais ton choix</option>
+              <option value="Coach Sébastien">
+                Coach Sébastien - Prise de masse
+              </option>
+              <option value="Coach Angélina">
+                Coach Angélina - Prendre le grand air
+              </option>
+              <option value="Coach Maëva">
+                Coach Maëva - Le summer body en bronzant
+              </option>
+              <option value="Coach Nicolas">
+                Coach Nicolas - Trouver l'équilibre entre sport et nutrition
+              </option>
+              <option value="Autre">Autres renseignements</option>
+            </select>
+          </li>
+          <li>
+            <label for="msg">Message :</label>
+            <textarea id="msg" name="user_message"></textarea>
+          </li>
+          <li class="Newsletter">
+            <input type="checkbox" value="Newsletter" />
+            <label> S'incrire à la newsletter de Lego Muscu</label>
+          </li>
+        </ul>
+
+        <div class="button">
+          <button type="submit">Envoyer le message</button>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <p class="copyright">©Lego Muscu</p>
+      <a href="https://www.instagram.com/" target="_blank">
+        <img src="assets/logo-insta.png" alt="Instagram"
+      /></a>
+      <a href="https://fr-fr.facebook.com/" target="_blank">
+        <img src="assets/logo-fb.png" alt="Facebook"
+      /></a>
+    </footer>
+
+    <script src="Contact.js"></script>
+  </body>
+</html>
