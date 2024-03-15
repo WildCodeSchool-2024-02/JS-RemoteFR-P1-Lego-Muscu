@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="contact.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Lego Muscu</title>
   </head>
 
@@ -18,7 +21,7 @@
         <ul>
           <li><a href="index.html">Accueil</a></li>
           <li><a href="questionnaire.html"></a>QUESTIONNAIRE</li>
-          <li><a href="Contact.html"></a>CONTACT</li>
+          <li><a href="contact.html"></a>CONTACT</li>
         </ul>
         <div id="icons"></div>
       </nav>
@@ -26,7 +29,7 @@
 
     <main>
       <form action="/ma-page-de-traitement" method="post">
-        <h2> Prendre contact avec l'équipe Lego Muscu</h2>
+        <h2>Prendre contact avec l'équipe Lego Muscu</h2>
         <ul>
           <li>
             <label for="name">Nom :</label>
@@ -39,12 +42,20 @@
           <li>
             <label for="subject">Sujet : </label>
             <select id="subject" required>
-                <option value="">Fais ton choix</option>
-                <option value="Coach Sébastien"> Coach Sébastien - Prise de masse</option>
-                <option value="Coach Angélina"> Coach Angélina - Prendre le grand air</option>
-                <option value="Coach Maëva"> Coach Maëva - Le summer body en bronzant</option>
-                <option value="Coach Nicolas"> Coach Nicolas - Trouver l'équilibre entre sport et nutrition</option>
-                <option value="Autre"> Autres renseignements</option>
+              <option value="">Fais ton choix</option>
+              <option value="Coach Sébastien">
+                Coach Sébastien - Prise de masse
+              </option>
+              <option value="Coach Angélina">
+                Coach Angélina - Prendre le grand air
+              </option>
+              <option value="Coach Maëva">
+                Coach Maëva - Le summer body en bronzant
+              </option>
+              <option value="Coach Nicolas">
+                Coach Nicolas - Trouver l'équilibre entre sport et nutrition
+              </option>
+              <option value="Autre">Autres renseignements</option>
             </select>
           </li>
           <li>
@@ -52,11 +63,11 @@
             <textarea id="msg" name="user_message"></textarea>
           </li>
           <li class="Newsletter">
-            <input type = "checkbox" value = "Newsletter" />
+            <input type="checkbox" value="Newsletter" />
             <label> S'incrire à la newsletter de Lego Muscu</label>
           </li>
         </ul>
-        
+
         <div class="button">
           <button type="submit">Envoyer le message</button>
         </div>
