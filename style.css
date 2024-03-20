@@ -184,6 +184,33 @@ p {
   padding-bottom: 1rem;
 }
 
+main p {
+  display: none;
+}
+
+.photo-angelina,
+.photo-maeva,
+.photo-sebastien,
+.photo-nico {
+  transition: transform 0.5s;
+}
+
+.photo-angelina:hover {
+  transform: scale(1.1);
+}
+
+.photo-sebastien:hover {
+  transform: scale(1.1);
+}
+
+.photo-maeva:hover {
+  transform: scale(1.1);
+}
+
+.photo-nico:hover {
+  transform: scale(1.1);
+}
+
 /* FOOTER */
 
 footer {
