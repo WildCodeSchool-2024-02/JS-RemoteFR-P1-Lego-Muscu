@@ -104,7 +104,7 @@ h1 {
   text-align: center;
   padding: 1rem;
   position: relative;
-  top: 35%;
+  top: 27%;
 }
 
 p {
@@ -191,7 +191,11 @@ main p {
 .photo-angelina,
 .photo-maeva,
 .photo-sebastien,
-.photo-nico {
+.photo-nico,
+#toggleText1,
+#toggleText2,
+#toggleText3,
+#toggleText4 {
   transition: transform 0.5s;
 }
 
@@ -209,6 +213,22 @@ main p {
 
 .photo-nico:hover {
   transform: scale(1.1);
+}
+
+#toggleText1:hover {
+  transform: scale(1.05);
+}
+
+#toggleText2:hover {
+  transform: scale(1.05);
+}
+
+#toggleText3:hover {
+  transform: scale(1.05);
+}
+
+#toggleText4:hover {
+  transform: scale(1.05);
 }
 
 h2 {
