@@ -103,7 +103,7 @@ nav {
   background-image: url(./assets/altere.jpg);
  }
 
- @media screen and (min-width:280px) { 
+ @media screen and  (max-width:768px) { 
 h1 {
     text-align: center;
     color: whitesmoke;
@@ -113,7 +113,7 @@ h1 {
 }
 }
 
-@media screen and (min-width:280px) { 
+@media screen and  (max-width:768px) { 
  p{
     text-align: center;
     color: whitesmoke;
@@ -129,7 +129,6 @@ ul  {
 li {
   margin-bottom: 10px;
   display: inline-block;
-  width: 400px;
 }
 
 label.question{
@@ -141,8 +140,6 @@ display: inline-block;
   margin-bottom:20px ;
 }
 
-@media screen and (min-width:280px) { 
-
  form {
   /* On centre le formulaire */
   margin: auto auto 10px auto ;
@@ -152,17 +149,16 @@ display: inline-block;
   padding: 1.5em;
   border: 2px solid var(--main-color);
   border-radius: 1em
-  
-} 
-}
+ }
+
 
 
 .bouton {
     text-align: center;
     padding: 15px;
-    margin: 10px;
-   
+    margin: 10px;   
 }
+
 button:hover{background-color: var(--main-color);} 
 
 .submit {
