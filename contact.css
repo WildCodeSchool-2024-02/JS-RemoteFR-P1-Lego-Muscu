@@ -265,7 +265,7 @@ footer {
   align-items: center;
   background-color: var(--main-color);
   width: 100%;
-  position: absolute;
+  position: fixed;
   bottom: 0;
 }
 
