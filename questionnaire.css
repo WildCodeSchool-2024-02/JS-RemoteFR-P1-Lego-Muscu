@@ -1,14 +1,19 @@
-:root{
-    --main-color : #FF0A0A;
-  }
+:root {
+  --main-color: #ff0a0a;
+}
 
- * {
+* {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   margin: 0;
-  padding:0;
- } 
+  padding: 0;
+}
 
 /* HEADER */
+
+header {
+  margin-right: 0;
+}
+
 #icons {
   cursor: pointer;
   display: none;
@@ -44,6 +49,9 @@
   }
   nav.active ul {
     left: 0;
+  }
+  header {
+    margin-right: 0;
   }
 }
 
@@ -90,68 +98,181 @@ nav {
 
 /* MAIN */
 
- body {
+body {
   background-image: url(./assets/altere.jpg);
- }
+}
 
 h1 {
-    text-align: center;
-    color: whitesmoke;
-    margin: 1.5rem;
-    font-size: xxx-large;
-    text-shadow:1px 1px 2px black ;
-
-}
- p{
-    text-align: center;
-    color: whitesmoke;
-    margin: 1rem;
+  text-align: center;
+  color: whitesmoke;
+  margin: 1.5rem;
+  font-size: xxx-large;
+  text-shadow: 1px 1px 2px black;
 }
 
-ul  {
-    list-style-type: none;
-    padding: 0;
+p {
+  text-align: center;
+  color: whitesmoke;
+  margin: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 li {
   margin-bottom: 10px;
   display: inline-block;
-  width: 400px;
 }
 
-label.question{
-display: inline-block;
+label.question {
+  display: inline-block;
   text-align: center;
   width: 400px;
-  font-weight:bold ;
+  font-weight: bold;
   margin-top: 10px;
-  margin-bottom:20px ;
+  margin-bottom: 20px;
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 320px) {
+    width: 100%;
+  }
 }
 
 form {
   /* On centre le formulaire */
-  margin: auto auto 10px auto ;
+  margin: auto auto 10px auto;
   width: 400px;
   background-color: whitesmoke;
   /* Le contour du formulaire */
   padding: 1.5em;
   border: 2px solid var(--main-color);
   border-radius: 1em;
-  
+
+  @media screen and (max-width: 480px) {
+    width: 300px;
+  }
+
+  @media screen and (max-width: 320px) {
+    width: 220px;
+  }
 }
 
 .bouton {
-    text-align: center;
-    padding: 15px;
-    margin: 10px;
-   
+  text-align: center;
+  padding: 15px;
+  margin: 10px;
 }
-button:hover{background-color: var(--main-color);} 
+
+button:hover {
+  background-color: var(--main-color);
+}
 
 .submit {
-border: #FF0A0A 1px solid;
-border-radius: 1em;
-padding: 0.2rem;
+  border: #ff0a0a 1px solid;
+  border-radius: 1em;
+  padding: 0.2rem;
+}
+
+/* MON POP UP*/
+
+h3 {
+  font-size: medium;
+  margin: 1rem;
+}
+
+/* POPUP MAEVA*/
+
+#popup-maeva {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: whitesmoke;
+  border: 2px solid var(--main-color);
+  padding: 20px;
+  border-radius: 1em;
+}
+
+#popup-maeva img {
+  width: 100%;
+  max-width: 130px;
+}
+
+/* POPUP SEBASTIEN*/
+#popup-sebastien {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: whitesmoke;
+  border: 2px solid var(--main-color);
+  padding: 20px;
+  border-radius: 1em;
+}
+
+#popup-sebastien img {
+  width: 100%;
+  max-width: 130px;
+}
+
+/* POPUP NICOLAS */
+#popup-nicolas {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: whitesmoke;
+  border: 2px solid var(--main-color);
+  padding: 20px;
+  border-radius: 1em;
+}
+
+#popup-nicolas img {
+  width: 100%;
+  max-width: 130px;
+}
+
+/*POPUP ANGELINA*/
+#popup-angelina {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: whitesmoke;
+  border: 2px solid var(--main-color);
+  padding: 20px;
+  border-radius: 1em;
+}
+
+#popup-angelina img {
+  width: 100%;
+  max-width: 130px;
+}
+
+/*POPUP AUTRE*/
+#popup-autre {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: whitesmoke;
+  border: 2px solid var(--main-color);
+  padding: 20px;
+  border-radius: 1em;
+}
+
+#popup-bouton p {
+  color: black;
+  font-size: small;
+}
+
+p a:hover {
+  color: var(--main-color);
 }
 
 /* FOOTER */
@@ -173,6 +294,7 @@ footer {
   font-size: 1em;
   margin: 0;
   padding: 0;
+  color: #0a0903;
 }
 
 @media (min-width: 768px) {

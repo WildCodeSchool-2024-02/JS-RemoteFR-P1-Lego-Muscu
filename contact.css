@@ -1,5 +1,5 @@
-:root{
-  --main-color : #FF0A0A;
+:root {
+  --main-color: #ff0a0a;
 }
 
 * {
@@ -91,33 +91,49 @@ nav img {
 
 /*-----MON FORMULAIRE DE CONTACT-----*/
 
-body{
+body {
   background-image: url("./assets/altere.jpg");
+  background-size: cover;
 }
 
 main {
-  margin : 5rem;
+  margin: 5rem;
+
+  @media screen and (max-width: 480px) {
+    margin: 0;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
 }
 
 form {
   /* On centre le formulaire */
-  margin: 0 auto;
+  margin: auto;
   width: 400px;
   background-color: whitesmoke;
+
   /* Le contour du formulaire */
   padding: 1.5em;
   border: 2px solid var(--main-color);
   border-radius: 1em;
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     width: 600px;
   }
-  
-  h2{
+
+  @media screen and (max-width: 480px) {
+    width: 300px;
+  }
+
+  h2 {
     margin-top: 0;
     margin-bottom: 1rem;
     text-align: center;
     font-size: 1.3em;
+
+    @media screen and (max-width: 480px) {
+      font-size: 1em;
+    }
   }
 
   ul {
@@ -130,20 +146,28 @@ form {
     /* Taille et alignement uniformes */
     display: inline-block;
     width: 350px;
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) {
       width: 550px;
+    }
+    @media screen and (max-width: 480px) {
+      width: 250px;
+      font-size: small;
     }
   }
 
-  input{
-    padding: .2rem;
+  input {
+    padding: 0.2rem;
   }
-  
-  select{
+
+  select {
     width: 350px;
-    padding: .2rem;
-    @media screen and (min-width: 768px){
+    padding: 0.2rem;
+    @media screen and (min-width: 768px) {
       width: 550px;
+    }
+    @media screen and (max-width: 480px) {
+      width: 250px;
+      font-size: small;
     }
   }
 
@@ -151,15 +175,19 @@ form {
   textarea {
     /* On s'assure que les champs texte ont la même police */
     font: 1em sans-serif;
-  
+
     /* Taille uniforme pour des champs */
     width: 350px;
     box-sizing: border-box;
 
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) {
       width: 550px;
     }
-  
+
+    @media screen and (max-width: 480px) {
+      width: 250px;
+    }
+
     /* On utilise la même bordure que pour le formulaire */
     border: 1px solid #999;
   }
@@ -168,45 +196,59 @@ form {
     /* On aligne les textes sur plusieurs lignes avec leur
        libellé. */
     vertical-align: top;
-  
+
     /* On fournit un peut d'espace pour saisir du texte. */
     height: 6em;
-  
+
     /* On permet de redimensionner verticalement. */
     resize: vertical;
   }
 
-  .Newsletter{
+  .Newsletter {
     display: flex;
-    
-    input{
-        width: 20%;
-        justify-content: left;
-       }
 
-      label{
-        width: 300px;
-         text-align: left;
-         font-size: .8em;
+    input {
+      width: 20%;
+      justify-content: left;
 
-        }
-        @media screen and (min-width: 768px){
-          display: block;
-          text-align: center;
-       }
+      @media screen and (max-width: 480px) {
+        width: 10%;
+        justify-content: center;
+      }
+    }
+
+    label {
+      width: 300px;
+      text-align: left;
+      font-size: 0.8em;
+
+      @media screen and (max-width: 480px) {
+        width: 200px;
+        font-size: 0.6em;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      display: block;
+      text-align: center;
+    }
+    @media screen and (max-width: 480px) {
+      display: block;
+      text-align: center;
+    }
   }
 
   .button {
     /* On aligne les boutons avec les champs texte. */
     text-align: center;
     padding-top: 1rem;
-    
-    button{
-      padding: .2rem;
+
+    button {
+      padding: 0.2rem;
       border-radius: 1em;
+      border: 1px solid var(--main-color);
     }
   }
-  button:hover{
+  button:hover {
     background-color: var(--main-color);
   }
 }
@@ -214,7 +256,6 @@ form {
 form li + li {
   margin-top: 1.5em;
 }
-
 
 /*-----MON FOOTER-----*/
 
