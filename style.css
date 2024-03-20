@@ -47,6 +47,10 @@
   nav.active ul {
     left: 0;
   }
+  nav li {
+    font-size: 20px;
+    margin: 20px;
+  }
 }
 
 nav ul {
@@ -103,8 +107,10 @@ h1 {
   color: white;
   text-align: center;
   padding: 1rem;
-  position: relative;
+  align-items: center;
+  justify-content: center;
   top: 27%;
+  padding-top: 5rem;
 }
 
 p {

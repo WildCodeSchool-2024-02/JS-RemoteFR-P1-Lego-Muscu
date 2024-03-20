@@ -53,6 +53,10 @@ header {
   header {
     margin-right: 0;
   }
+  nav li {
+    font-size: 20px;
+    margin: 20px;
+  }
 }
 
 nav ul {
