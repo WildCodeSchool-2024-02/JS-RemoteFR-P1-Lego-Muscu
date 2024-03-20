@@ -167,6 +167,107 @@ border-radius: 1em;
 padding: 0.2rem;
 }
 
+
+
+/* MON POP UP*/
+
+h3{
+  font-size:medium;
+  margin: 1rem;
+}
+
+/* POPUP MAEVA*/
+
+#popup-maeva {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: whitesmoke;
+  border: 2px solid var(--main-color);
+  padding: 20px;
+  border-radius: 1em;
+}
+
+#popup-maeva img {
+  width : 100%;
+  max-width: 130px;
+}
+
+
+/* POPUP SEBASTIEN*/
+#popup-sebastien {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: whitesmoke;
+  border: 2px solid var(--main-color);
+  padding: 20px;
+  border-radius: 1em;
+}
+
+#popup-sebastien img {
+  width : 100%;
+  max-width: 130px;
+}
+
+/* POPUP NICOLAS */
+#popup-nicolas {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: whitesmoke;
+  border: 2px solid var(--main-color);
+  padding: 20px;
+  border-radius: 1em;
+}
+
+#popup-nicolas img {
+  width : 100%;
+  max-width: 130px;
+}
+
+/*POPUP ANGELINA*/
+#popup-angelina {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: whitesmoke;
+  border: 2px solid var(--main-color);
+  padding: 20px;
+  border-radius: 1em;
+}
+
+#popup-angelina img {
+  width : 100%;
+  max-width: 130px;
+}
+
+/*POPUP AUTRE*/
+#popup-autre {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: whitesmoke;
+  border: 2px solid var(--main-color);
+  padding: 20px;
+  border-radius: 1em;
+}
+
+#popup-bouton p {
+  color: black;
+  font-size: small;
+}
+
+p a:hover {
+  color: var(--main-color);
+}
+
+
 /* FOOTER */
 
 footer {
